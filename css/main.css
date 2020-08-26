@@ -29,6 +29,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
 }
 
 .container {
@@ -38,7 +39,7 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 ul {
@@ -51,12 +52,39 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 4.8rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 3.6rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
 
 /*######################################    Custom Properties    ##################################################*/
 
 :root {
     --firstcolor: #004757;
     --secondcolor: #06AED5;
+    --thirdcolor: #A9D5E2;
+}
+
+.button {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--secondcolor);
+    padding: 1rem 2rem 1rem 2rem;
+    box-shadow: 0px 4px 4px rgba(6, 174, 213, 0.25);
+    border-radius: 10px;
 }
 
 
@@ -186,6 +214,120 @@ a {
 
 
 /*######################################    Nav bar end    ##################################################*/
+
+
+/*######################################    Projects    ##################################################*/
+
+.project-description {
+    background-color: var(--thirdcolor);
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0px 0px 40px 0px;
+}
+
+.project-overview {
+    margin-top: 2rem;
+}
+
+.project-description p {
+    text-align: start;
+}
+
+.project-description a {
+    display: inline-block;
+    margin: 2rem 0;
+}
+
+.img-project {
+    border-radius: 40px 0px 0px 0px;
+}
+
+.img-project img {
+    border-radius: 40px 0px 0px 0px;
+}
+
+@media (min-width: 768px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+    .project-overview {
+        display: flex;
+    }
+    .img-project {
+        width: 50%;
+    }
+    .img-project img {
+        max-width: 100%;
+        max-height: 40rem;
+        object-fit: contain;
+    }
+    .project-description {
+        width: 50%;
+    }
+}
+
+
+/*######################################    Projects end    ##################################################*/
+
+
+/*######################################    Hire me end    ##################################################*/
+
+.hire-me-section {
+    background-color: var(--firstcolor);
+    margin-top: 2rem;
+}
+
+.hire-me {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hire-me h3 {
+    color: white;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.benefits {
+    color: var(--secondcolor);
+    padding-top: 3rem;
+    text-align: start;
+    font-weight: bold;
+}
+
+.info-web {
+    padding-bottom: 3rem;
+}
+
+.info-web h3 {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .info-web {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+/*######################################    Hire me end    ##################################################*/
+
+
+/*######################################   About end    ##################################################*/
+
+.about-resume {
+    display: flex;
+    align-items: center;
+}
+
+
+/*######################################   About end    ##################################################*/
 
 
 /*
