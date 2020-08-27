@@ -319,15 +319,158 @@ h4 {
 /*######################################    Hire me end    ##################################################*/
 
 
-/*######################################   About end    ##################################################*/
+/*######################################   About   ##################################################*/
 
-.about-resume {
+@media (min-width: 768px) {
+    .about-resume {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.focus {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    height: fit-content;
+}
+
+@media (min-width: 768px) {
+    .focus-container {
+        display: flex;
+    }
+}
+
+.icon {
+    margin: 0;
+}
+
+.focus-description h4 {
+    margin: 1rem 0 0 0;
+}
+
+.focus-description {
+    margin-bottom: 2rem;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-container i {
+    font-size: 8rem;
+    margin: 0;
+    color: var(--secondcolor);
+}
+
+.skill-container p {
+    margin: 0 0 3rem 0;
+}
+
+@media (min-width: 768px) {
+    .skills-tools-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.work-progress-content i {
+    color: var(--secondcolor);
+    font-size: 4rem;
+    margin: 0;
+}
+
+.work-progress-content p {
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .work-progress-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .work-progress-content i {
+        margin-right: 3rem;
+    }
 }
 
 
 /*######################################   About end    ##################################################*/
+
+
+/*######################################   Banner    ##################################################*/
+
+.banner {
+    position: relative;
+}
+
+.img-banner {
+    width: 100%;
+}
+
+.banner-title {
+    background-color: white;
+}
+
+.banner-title p {
+    font-size: 6.4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.services {
+    background-color: white;
+}
+
+.services p:first-of-type {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .banner-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 5rem 0 5rem;
+    }
+    .services {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0 5rem 0 5rem;
+    }
+}
+
+
+/*######################################   Banner end    ##################################################*/
+
+
+/*######################################   Contact    ##################################################*/
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social i {
+    color: var(--secondcolor);
+    font-size: 6rem;
+    margin-right: 6rem;
+}
+
+.social i:last-child {
+    margin-right: 0;
+}
+
+
+/*######################################   Contact end    ##################################################*/
 
 
 /*
