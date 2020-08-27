@@ -1,3 +1,7 @@
+//This Javier Rumayor Portfolio's Javascript document
+
+//Sticky Navbar
+
 const nav = document.querySelector('.bar');
 const topToNav = nav.offsetTop;
 const main = document.querySelector('body');
