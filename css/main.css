@@ -245,6 +245,7 @@ h4 {
     padding: 2rem;
     text-align: center;
     border-radius: 0px 0px 40px 0px;
+    position: relative;
 }
 
 .project-overview {
@@ -257,7 +258,11 @@ h4 {
 
 .project-description a {
     display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
     margin: 2rem 0;
+    text-align: center;
 }
 
 .img-project {
@@ -282,8 +287,8 @@ h4 {
     }
     .img-project img {
         max-width: 100%;
-        max-height: 40rem;
-        object-fit: contain;
+        height: 40rem;
+        object-fit: cover;
     }
     .project-description {
         width: 50%;
